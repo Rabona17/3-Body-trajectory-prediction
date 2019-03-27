@@ -103,11 +103,11 @@ def RK4(f, r, tleft, tright, dt, err_tol=1000/31556952):
             rho = min((dt*err_tol/eps_tot1)**(1./4),(dt*err_tol/eps_tot2)**(1./4),(dt*err_tol/eps_tot3)**(1./4)) 
             if rho >= 1.0:
                 if rho >= 2.0:
-                  rho = 2.0
+                    rho = 2.0
                 break 
             else:
                 if rho < 0.5:
-                  rho = 0.5 
+                    rho = 0.5 
                 dt *= 0.99*rho
         dt *= 0.99*rho
         r = r1_a.copy() 
