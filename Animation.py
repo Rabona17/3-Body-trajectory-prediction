@@ -1,3 +1,7 @@
+"""
+This file is a script
+"""
+
 import vpython as vp
 import numpy as np 
 %matplotlib inline
